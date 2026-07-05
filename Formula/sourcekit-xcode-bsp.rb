@@ -6,11 +6,11 @@ class SourcekitXcodeBsp < Formula
   license "Apache-2.0"
   head "https://github.com/tideline-studio/sourcekit-xcode-bsp.git", branch: "main"
 
-  depends_on :xcode => ["16.0", :build]
-  depends_on :macos => :sequoia
+  depends_on xcode: ["16.0", :build]
+  depends_on macos: :sequoia
 
   def install
-    system "swift", "build", "--configuration", "release", "--disable-sandbox"
+    system "swift", "build", "--configuration", "release"
     bin.install ".build/release/sourcekit-xcode-bsp"
   end
 
