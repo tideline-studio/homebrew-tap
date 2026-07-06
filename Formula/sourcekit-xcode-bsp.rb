@@ -12,6 +12,7 @@ class SourcekitXcodeBsp < Formula
   def install
     system "swift", "build", "--configuration", "release"
     bin.install ".build/release/sourcekit-xcode-bsp"
+    bin.install ".build/release/SWBBuildServiceBundle"
   end
 
   test do
