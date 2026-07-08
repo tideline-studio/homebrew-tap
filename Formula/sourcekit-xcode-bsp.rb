@@ -11,8 +11,8 @@ class SourcekitXcodeBsp < Formula
 
   def install
     system "swift", "build", "--configuration", "release", "--disable-sandbox"
-    bin.install ".build/release/sourcekit-xcode-bsp"
-    bin.install ".build/release/SWBBuildServiceBundle"
+    libexec.install ".build/release/sourcekit-xcode-bsp"
+    libexec.install ".build/release/SWBBuildServiceBundle"
     %w[
       SwiftBuild_SWBAndroidPlatform
       SwiftBuild_SWBApplePlatform
@@ -22,7 +22,8 @@ class SourcekitXcodeBsp < Formula
       SwiftBuild_SWBUniversalPlatform
       SwiftBuild_SWBWebAssemblyPlatform
       SwiftBuild_SWBWindowsPlatform
-    ].each { |b| cp_r ".build/release/#{b}.bundle", bin }
+    ].each { |b| cp_r ".build/release/#{b}.bundle", libexec }
+    bin.write_exec_script libexec/"sourcekit-xcode-bsp"
   end
 
   test do
