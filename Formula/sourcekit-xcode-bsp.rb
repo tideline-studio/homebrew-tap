@@ -22,7 +22,7 @@ class SourcekitXcodeBsp < Formula
       SwiftBuild_SWBUniversalPlatform
       SwiftBuild_SWBWebAssemblyPlatform
       SwiftBuild_SWBWindowsPlatform
-    ].each { |b| bin.install ".build/release/#{b}.bundle" }
+    ].each { |b| cp_r ".build/release/#{b}.bundle", bin }
   end
 
   test do
