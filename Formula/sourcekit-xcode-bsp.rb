@@ -10,7 +10,7 @@ class SourcekitXcodeBsp < Formula
   depends_on macos: :sequoia
 
   def install
-    system "swift", "build", "--configuration", "release"
+    system "swift", "build", "--configuration", "release", "--disable-sandbox"
     bin.install ".build/release/sourcekit-xcode-bsp"
     bin.install ".build/release/SWBBuildServiceBundle"
   end
