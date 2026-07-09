@@ -1,8 +1,8 @@
 class SourcekitXcodeBsp < Formula
   desc "Build Server Protocol server for Xcode projects"
   homepage "https://github.com/tideline-studio/sourcekit-xcode-bsp"
-  url "https://github.com/tideline-studio/sourcekit-xcode-bsp/archive/refs/tags/0.0.1.tar.gz"
-  sha256 "008b6d87f99304bcae56219697977a3c7543a2dd02ed27fc09b56ded1ff9179b"
+  url "https://github.com/tideline-studio/sourcekit-xcode-bsp/archive/refs/tags/0.0.2.tar.gz"
+  sha256 "299e98dbe119d00980911c69569b52f3675fd36815996e8c28593fcdc34a2f9c"
   license "Apache-2.0"
   head "https://github.com/tideline-studio/sourcekit-xcode-bsp.git", branch: "main"
 
