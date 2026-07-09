@@ -2,7 +2,7 @@ class AgentLens < Formula
   desc "macOS daemon + CLI for code diagnostics and linting"
   homepage "https://github.com/tideline-studio/agent-lens"
   url "https://github.com/tideline-studio/agent-lens/archive/refs/tags/0.0.1.tar.gz"
-  sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+  sha256 "72d0d5a680adc4bba2eb3c3d35729fbfd622dae32387d1ee5be0376e31547661"
   license "Apache-2.0"
   head "https://github.com/tideline-studio/agent-lens.git", branch: "main"
 
